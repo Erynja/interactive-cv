@@ -99,7 +99,7 @@ Code kopieren
 ---
 
 ## Customization
-###Icons and Images
+### Icons and Images
 Replace images in the assets/ folder to customize visuals.
 
 ### Animation Timing
