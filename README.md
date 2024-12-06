@@ -36,47 +36,49 @@ Icons for GitHub, email, phone, and a CV download link are displayed. Text descr
 1. Clone the repository:
    ```bash
    git clone https://github.com/Erynja/interactive-cv.git
-Navigate to the project directory:
-bash
-Code kopieren
-cd interactive-cv
-Open the index.html file in your browser:
-bash
-Code kopieren
-open index.html
+2. Navigate to the project directory:
+	```bash
+	cd interactive-cv
+3. Open the index.html file in your browser:
+	```bash
+	open index.html
 
-##How It Works
-###JavaScript Highlights
-####Scroll Triggered Animations
+---
+
+## How It Works
+### JavaScript Highlights
+#### Scroll Triggered Animations
 Elements such as charts and rocks are triggered based on Space Panda's scroll position.
 
-javascript
-Code kopieren
+```javascript
+
 const chartTriggerPoint = 2100;
 if (scrollContainer.scrollLeft >= chartTriggerPoint) {
     growCharts();
 }
-
+```
 Keyboard Navigation
 Space Panda's movement updates the scroll position dynamically:
 
-javascript
-Code kopieren
+```javascript
+
 window.addEventListener("keydown", (e) => {
     if (e.key === "a") moveLeft();
     if (e.key === "d") moveRight();
 });
-
+```
 Interactive Stars
 Clicking on stars reveals corresponding skills:
 
-javascript
+```javascript
 Code kopieren
 document.querySelectorAll(".star").forEach(star => {
     star.addEventListener("click", () => showSkill(star));
 });
+```
+---
 
-##File Structure
+## File Structure
 plaintext
 Code kopieren
 |-- index.html        # Main HTML file
@@ -94,15 +96,19 @@ Code kopieren
     |-- shakestein.png
     |-- spacepanda.png
 
-##Customization
+---
+
+## Customization
 ###Icons and Images
 Replace images in the assets/ folder to customize visuals.
 
-###Animation Timing
+### Animation Timing
 Adjust animation duration and delay in cv.css.
 
-###Interactive Elements
+### Interactive Elements
 Add or modify JavaScript functions in cv.js to include more interactivity.
+
+---
 
 ## Future Enhancements
 
