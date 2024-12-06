@@ -79,8 +79,7 @@ document.querySelectorAll(".star").forEach(star => {
 ---
 
 ## File Structure
-plaintext
-Code kopieren
+```plaintext
 |-- index.html        # Main HTML file
 |-- cv.css            # Stylesheet for the interactive resume
 |-- cv.js             # JavaScript for animations and interactions
@@ -95,7 +94,7 @@ Code kopieren
     |-- rock3.png
     |-- shakestein.png
     |-- spacepanda.png
-
+```
 ---
 
 ## Customization
