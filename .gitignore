@@ -3,6 +3,12 @@ fonts/**
 
 # Images
 
+# SVG
+*.svg
+
+#PNG
+*.png
+
 # JPEG
 *.jpg
 *.jpeg
